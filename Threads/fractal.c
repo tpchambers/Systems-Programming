@@ -7,22 +7,6 @@
 #include <complex.h>
 #include <pthread.h>
 
-/*
- * Compute the number of iterations at point x, y
- * in the complex space, up to a maximum of maxiter.
- * Return the number of iterations at that point.
- *
- * This example computes the Mandelbrot fractal:
- * z = z^2 + alpha
- *
- * Where z is initially zero, and alpha is the location x + iy
- * in the complex plane.  Note that we are using the "complex"
- * numeric type in C, which has the special functions cabs()
- * and cpow() to compute the absolute values and powers of
- * complex values.
- * */
-
-
 static int compute_point (double x, double y, int max) {
     double complex z = 0;
     double complex alpha = x + I*y;
